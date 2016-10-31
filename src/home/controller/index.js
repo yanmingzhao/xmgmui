@@ -50,7 +50,7 @@ export default class extends Base {
     		msg:'请填写信息'
     	}
   	}else{
-	  	let findusername = await this.model('user').where({username:post.username}).find()
+	  	let findusername = (await this.model('user').where({username:post.username}).find())
 	  	if(think.isEmpty(findusername)){
 	  		await this.model('user').add(post);
 	  		success = {
