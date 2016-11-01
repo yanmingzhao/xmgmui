@@ -48,3 +48,4 @@ Temporary Items
 app/
 node_modules/
 
+src/home/controller/index.js
